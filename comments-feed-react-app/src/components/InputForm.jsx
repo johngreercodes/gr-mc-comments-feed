@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const InputForm = ({setComments}) => {
+const InputForm = ({setCommentSync}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault(); // prevents page from reloading
@@ -12,7 +12,7 @@ const InputForm = ({setComments}) => {
         })
         document.getElementById("name").value = ""
         document.getElementById("comment").value = ""
-        setComments((existingComments)=>[...existingComments, ...response.data])
+        setCommentSync(false)
         } catch (error) {
             alert("Sorry, an error occurred. Open the console to view the error.")
             console.log(error)
