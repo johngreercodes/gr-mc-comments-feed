@@ -6,7 +6,7 @@ const InputForm = ({setCommentSync}) => {
     const handleSubmit = async (event) => {
         event.preventDefault(); // prevents page from reloading
         try {
-            const response = await axios.post("http://localhost:3001/createComment", {
+            await axios.post("http://localhost:3001/createComment", {
                 "name": document.getElementById("name").value,
                 "message": document.getElementById("comment").value 
         })
