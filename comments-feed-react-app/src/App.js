@@ -29,7 +29,7 @@ function App() {
     <div>
     <AppName />
     <InputForm setCommentSync={setCommentSync}/>
-      <div id="commentCardContainer">
+      <div id="commentCardContainer" aria-label="Comments Feed">
       <CommentCard comments={comments}/>
       </div>
     </div>

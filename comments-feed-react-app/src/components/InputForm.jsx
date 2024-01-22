@@ -21,13 +21,9 @@ const InputForm = ({setCommentSync}) => {
     return (
         <div className="container">
         <form onSubmit={handleSubmit}>
-            <label htmlFor="name"></label>
-            <input type="text" id="name" name="name" placeholder="Your name" required/>
-            
-            <label htmlFor="comment"></label>
-            <textarea id="comment" name="comment" placeholder="Your comment" required/>
-            
-            <button name="submit" type="submit" aria-label="Comment">Comment</button>
+            <input type="text" id="name" name="name" aria-label="name" placeholder="Your name" required/>
+            <textarea id="comment" name="comment" aria-label="comment" placeholder="Your comment" required/>
+            <button name="submit" type="submit" aria-label="submit comment">Comment</button>
         </form>
         </div>
     )
