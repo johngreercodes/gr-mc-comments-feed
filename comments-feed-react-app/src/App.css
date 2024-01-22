@@ -2,30 +2,35 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 #commentsAppTitle {
   font-size: 24px;
-  margin: 5%;
+  margin: 25px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15%;
+  align-items: center;
+  margin-bottom: 25px;
   width: 100%;
   [name="name"] {
     border: solid black;
-    margin-bottom: 5%
+    margin-bottom: 10px;
+    width: 30%;
   };
   [name="comment"] {
     border: solid black;
-    margin-bottom: 10%
+    margin-bottom: 10px;
+    width: 30%;
+    height: 125px;
+    resize: none;
   };
 }
 
 form button {
-  width: 50%;
   border: solid black;
   background-color: white;
   box-shadow: 0.3em 0.3em 0 black;
@@ -48,22 +53,24 @@ form button:active {
 
 #commentCard {
   border: 1px solid;
-  padding: 5px;
-  margin: 5px;
-  width: 50%;
+  padding: 20px;
+  margin: 10px;
+  width: 60%;
 }
 
 .commentCardMessage {
   font-size: 16px;
   font-style: italic;
   justify-content: left;
-  padding: 10%;
+  margin-bottom: 10px;
 }
 
 .commentCardAuthor {
   text-align: right;
   font-size: 12px;
-  padding-bottom: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .commentCardTimestamp {
