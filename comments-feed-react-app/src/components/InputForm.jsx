@@ -23,7 +23,7 @@ const InputForm = ({setCommentSync}) => {
         <form onSubmit={handleSubmit}>
             <input type="text" id="name" name="name" aria-label="name" placeholder="Your name" required/>
             <textarea id="comment" name="comment" aria-label="comment" placeholder="Your comment" required/>
-            <button name="submit" type="submit" aria-label="submit comment">Comment</button>
+            <button type="submit" name="submit" aria-label="submit comment">Comment</button>
         </form>
         </div>
     )
